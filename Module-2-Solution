@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Lauren">
+<link href="https://fonts.googleapis.com/css?family=Lobster|Oxygen" rel="stylesheet">
+<style>
+*{
+  box-sizing:border-box;
+  color:black;
+}
+/*========================= "Our Menu" Title ================================*/
+h1{
+  font:175% 'Lobster';
+  color:red;
+  text-align:center;
+}
+/*====================== Gray boxes containing lorem ipsum =================*/
+.menuSectionTop, .menuSectionBottom{
+  background-color:gray;
+  font-family:arial;
+  border: 1px solid black;
+  padding:15px; 
+}
+/*====================== Chicken, Sushi, Beef Labels =======================*/
+.sectionTitle{
+  border:1px solid black;
+  background-color:white;
+  text-align:center;
+  font:20px 'Lobster';
+  width:100px;
+  position:relative;
+  float:right;
+}
+#chickenTitle{
+  background-color:blue;
+}
+#sushiTitle{
+  background-color:pink;
+}
+#beefTitle{
+  background-color:yellow;
+}
+/*========================Media Queries=================================*/
+@media (min-width:992px){
+  .menuSectionTop, .menuSectionBottom{width:33%;}
+  #beef, #sushi{float:right;}
+  #beef{margin-left:5px;}
+  #chicken{float:left;}  
+}
+@media (min-width:768px) and (max-width:991px){
+  .menuSectionTop{width:49%;}
+  #beef{float:right;}
+  #chicken, #sushi{float:left;}
+  .menuSectionBottom{width:100%; margin-top:5px;}
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+<div id="chicken"class="menuSectionTop"><div id="chickenTitle"class="sectionTitle">Chicken</div><br><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et feugiat tellus. Nulla vitae fermentum nisl, vel mollis sapien. Aliquam efficitur mi eget posuere volutpat. Nullam imperdiet turpis et arcu mattis, vitae iaculis nulla eleifend. Integer auctor nisi vel diam viverra, eu dignissim odio mattis. Nullam enim augue, condimentum nec interdum id, placerat imperdiet diam. Suspendisse gravida nisl ut massa blandit, vitae molestie sapien suscipit. Nunc rhoncus sagittis lobortis. Nunc nec leo vestibulum, molestie mi in, elementum metuse</div>
+
+<div id="beef"class="menuSectionTop"><div id="beefTitle"class="sectionTitle">Beef</div><br><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et feugiat tellus. Nulla vitae fermentum nisl, vel mollis sapien. Aliquam efficitur mi eget posuere volutpat. Nullam imperdiet turpis et arcu mattis, vitae iaculis nulla eleifend. Integer auctor nisi vel diam viverra, eu dignissim odio mattis. Nullam enim augue, condimentum nec interdum id, placerat imperdiet diam. Suspendisse gravida nisl ut massa blandit, vitae molestie sapien suscipit. Nunc rhoncus sagittis lobortis. Nunc nec leo vestibulum, molestie mi in, elementum metus </div>
+
+<div id="sushi"class="menuSectionBottom"><div id="sushiTitle"class="sectionTitle">Sushi</div><br><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et feugiat tellus. Nulla vitae fermentum nisl, vel mollis sapien. Aliquam efficitur mi eget posuere volutpat. Nullam imperdiet turpis et arcu mattis, vitae iaculis nulla eleifend. Integer auctor nisi vel diam viverra, eu dignissim odio mattis. Nullam enim augue, condimentum nec interdum id, placerat imperdiet diam. Suspendisse gravida nisl ut massa blandit, vitae molestie sapien suscipit. Nunc rhoncus sagittis lobortis. Nunc nec leo vestibulum, molestie mi in, elementum metus</div>
+</body>
+</html>
