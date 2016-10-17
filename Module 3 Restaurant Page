@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+  <title>Coursera Module 3: Restaurant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!--adjusts scale to fit phones-->
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<style>
+  body{
+  background-color:#7798AB;
+}
+
+.menuItems{
+  background-color:gray;
+  padding:15px;
+  border-radius:10px;
+  background-color:#C4D7F2;
+  margin:5px;
+}
+
+.textStyle{
+  color:#222222;
+  font-family:'Lobster';
+  font-size:3em;
+}
+.menuItems > p{
+  font-family:'Droid Sans';
+}
+.fishPic{
+  color:#007090;
+}
+.chickenPic{
+  color: #581830;
+}
+.beefPic{
+  color:#C77507;
+}
+.navbar{
+  color:#F0F7EE;
+  border-radius:0px;
+  background-color:#0D1B1E;
+  font-family:'Anton';
+}
+#myNavbar{
+  background-color:#19343A;
+  color:black;
+  
+}
+</style>  
+</head>
+<body>
+  
+  <!--Navigation bar-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!--Navbar button-->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span><!--creates the bars for image of navbar toggle button-->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <!--Navbar Brand-->
+        <a class="navbar-brand" href="#">Food, LLC</a>
+       </div><!--end navbar-header class-->
+       <!--Navbar collapsing menu-->
+      <div class="visible-xs">
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav text-center">
+            <li><a class="visible-xs" href="#">CHICKEN</a></li>
+            <li><a class="visible-xs" href="#">BEEF</a></li>
+            <li><a class="visible-xs" href="#">SUSHI</a></li>
+          </ul>
+       </div> 
+      </div><!--End collapsing navbar-->
+    </div><!--End container-fluid-->
+  </nav><!--End Navigation bar-->
+  
+  <div class="container-fluid text-center">
+    <!--Our Menu Header-->
+    <div class="page-header">
+      <h1 class="textStyle">Our Menu</h1>
+    </div>
+    <!--Beef, Chicken, Sushi Boxes-->
+    <div class="row">
+      <div class="col-md-4 col-xs-12">
+        <div class="menuItems">
+          <h2 class="textStyle"><span class="chickenPic">&#128020</span> Chicken</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lacus id augue sollicitudin placerat. Sed ante arcu, rutrum in velit tristique, mollis consequat tellus. Fusce eu justo at purus semper venenatis. Ut urna lectus, egestas vel est vitae, aliquet hendrerit enim. Donec hendrerit justo sed ligula lobortis, non tempor velit pretium. Pellentesque euismod fermentum hendrerit. Pellentesque eget nulla nulla. Nunc et vehicula odio, ut tristique ligula. Ut at odio ut enim commodo fringilla ut eu sem.
+
+In blandit sodales congue. Sed maximus convallis lorem, quis vehicula leo elementum in. Ut egestas velit sem, a pulvinar massa finibus non. Maecenas et nisl ipsum. Nulla iaculis a ligula id lobortis. Mauris risus purus, iaculis pulvinar dui vel, tempus mollis odio. Proin accumsan in dolor eu vestibulum. Aliquam lacus nibh, facilisis pretium quam eu, gravida imperdiet sem. Vestibulum scelerisque consectetur lacus in commodo. Maecenas tristique neque ut blandit tincidunt. Proin luctus ornare magna nec gravida. Suspendisse eros justo, eleifend ac risus blandit, lobortis vehicula odio. Mauris elementum ex et metus fringilla, in condimentum ante pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis sit amet nisi nibh. Nullam vel nisi vitae lorem mattis fermentum. </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <div class="menuItems">
+          <h2 class="textStyle"><span class="beefPic">&#8801</span> Beef</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lacus id augue sollicitudin placerat. Sed ante arcu, rutrum in velit tristique, mollis consequat tellus. Fusce eu justo at purus semper venenatis. Ut urna lectus, egestas vel est vitae, aliquet hendrerit enim. Donec hendrerit justo sed ligula lobortis, non tempor velit pretium. Pellentesque euismod fermentum hendrerit. Pellentesque eget nulla nulla. Nunc et vehicula odio, ut tristique ligula. Ut at odio ut enim commodo fringilla ut eu sem.
+
+In blandit sodales congue. Sed maximus convallis lorem, quis vehicula leo elementum in. Ut egestas velit sem, a pulvinar massa finibus non. Maecenas et nisl ipsum. Nulla iaculis a ligula id lobortis. Mauris risus purus, iaculis pulvinar dui vel, tempus mollis odio. Proin accumsan in dolor eu vestibulum. Aliquam lacus nibh, facilisis pretium quam eu, gravida imperdiet sem. Vestibulum scelerisque consectetur lacus in commodo. Maecenas tristique neque ut blandit tincidunt. Proin luctus ornare magna nec gravida. Suspendisse eros justo, eleifend ac risus blandit, lobortis vehicula odio. Mauris elementum ex et metus fringilla, in condimentum ante pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis sit amet nisi nibh. Nullam vel nisi vitae lorem mattis fermentum.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <div class="menuItems">
+          <h2 class="textStyle"><span class="fishPic">&#128031</span> Sushi</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lacus id augue sollicitudin placerat. Sed ante arcu, rutrum in velit tristique, mollis consequat tellus. Fusce eu justo at purus semper venenatis. Ut urna lectus, egestas vel est vitae, aliquet hendrerit enim. Donec hendrerit justo sed ligula lobortis, non tempor velit pretium. Pellentesque euismod fermentum hendrerit. Pellentesque eget nulla nulla. Nunc et vehicula odio, ut tristique ligula. Ut at odio ut enim commodo fringilla ut eu sem.
+
+In blandit sodales congue. Sed maximus convallis lorem, quis vehicula leo elementum in. Ut egestas velit sem, a pulvinar massa finibus non. Maecenas et nisl ipsum. Nulla iaculis a ligula id lobortis. Mauris risus purus, iaculis pulvinar dui vel, tempus mollis odio. Proin accumsan in dolor eu vestibulum. Aliquam lacus nibh, facilisis pretium quam eu, gravida imperdiet sem. Vestibulum scelerisque consectetur lacus in commodo. Maecenas tristique neque ut blandit tincidunt. Proin luctus ornare magna nec gravida. Suspendisse eros justo, eleifend ac risus blandit, lobortis vehicula odio. Mauris elementum ex et metus fringilla, in condimentum ante pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis sit amet nisi nibh. Nullam vel nisi vitae lorem mattis fermentum.</p>
+        </div>
+      </div>
+    </div><!--End row class-->
+  </div><!--End container-fluid class-->
+</body>
+</html>
